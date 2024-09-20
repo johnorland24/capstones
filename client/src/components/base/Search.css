@@ -1,0 +1,40 @@
+@keyframes gradientAnimation {  
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  input, button {  
+    border-image-slice: 1;  
+    border-width: 1px;  
+    border-style: solid;  
+    border-color: transparent;   
+    background: transparent;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+    transition: all 0.3s ease;  
+    outline: none;  
+    padding: 10px;   
+    border-radius: 5px; 
+  }
+  
+  input:hover, input:focus, button:hover {  
+    border-image-source: linear-gradient(270deg, #ff1b6b, #e81cff, #ff0f7b, #fff95b, #45caff, #40c9ff, #60efff);  
+    animation: gradientAnimation 4s ease infinite;  
+    box-shadow:   
+      0 12px 24px rgba(4, 180, 234, 0.2),   
+      0 4px 8px rgba(247, 55, 2, 0.15);  
+    border-color: transparent;  
+  }
+  
+  .border-gradient {
+    border-image-source: linear-gradient(270deg, #ff1b6b, #e81cff, #ff0f7b, #fff95b, #45caff, #40c9ff, #60efff);
+    border-image-slice: 1;
+    animation: gradientAnimation 4s ease infinite;
+  }
+  
